@@ -13,13 +13,15 @@ export const authOptions = {
           // TODO: User credentials type from next-aut
           async authorize(credentials: any) {
             // Do zod validation, OTP validation here
-            const hashedPassword = await bcrypt.hash(credentials.password, 10);
+            // const hashedPassword = await bcrypt.hash(credentials.password, 10);
+            console.log("kk")
             const existingUser = await db.user.findFirst({
                 where: {
                     number: credentials.phone
                 }
             });
-
+            
+            
             if (existingUser) {
                 const passwordValidation = await bcrypt.compare(credentials.password, existingUser.password);
                 if (passwordValidation) {

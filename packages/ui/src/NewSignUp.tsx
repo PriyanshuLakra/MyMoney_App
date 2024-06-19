@@ -25,6 +25,7 @@ export const NewSignUp=()=>{
                 }
             }
             else{
+                
                 const response = await axios.post('/api/auth/signup', { phone , name , password });
                 if (response.status === 200) {
                   // Redirect to sign-in page after successful sign-up
