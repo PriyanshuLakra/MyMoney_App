@@ -26,7 +26,7 @@ jobs:
         context: .
         file: ./docker/Dockerfile.user_app
         push: true
-        tags: priyanshulakra/mymoney2:latest  # Replace with your Docker Hub username and repository
+        tags: priyanshulakra/mymoneyfrontend:latest  # Replace with your Docker Hub username and repository
 
     - name: Build and Push Docker image
       uses: docker/build-push-action@v2
