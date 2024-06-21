@@ -3,12 +3,13 @@
 import axios from "axios";
 import { useState } from "react"
 import { useRouter } from "next/navigation";
+import { addMoneyFromBank } from "../app/lib/action/addMoneyFromBank";
 
 interface ConfirmAddProps {
     user_identifier: string;
   }
   
-  export const ConfirmAdd: React.FC<ConfirmAddProps> = ({ user_identifier })=>{
+  export const ConfirmAdd2: React.FC<ConfirmAddProps> = ({ user_identifier })=>{
     const [amount , setAmount] = useState("");
     const token = "9999999999";
     const router = useRouter();
@@ -20,8 +21,8 @@ interface ConfirmAddProps {
           //   amount,
           // });
 
-          // addMoneyFromBank()
-    
+          addMoneyFromBank(token , user_identifier , amount)
+          router.push("/dashboard")
           // if (response.status === 200) {
           //   router.push("/dashboard")
           //   // alert("Payment done");
