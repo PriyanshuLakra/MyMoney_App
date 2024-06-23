@@ -59,7 +59,7 @@ export const NewSignUp=()=>{
                                 <label className="block mb-2 text-sm font-semibold text-black">Phone</label>
                                 <input onChange={(e)=>{
                                     setPhone(e.target.value)
-                                }} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+91 ##########" required />
+                                }} type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="At least 10 digit number" required />
                             </div>
                         </div>
 
@@ -78,7 +78,7 @@ export const NewSignUp=()=>{
                                 <label className="block mb-2 text-sm font-semibold text-black">password</label>
                                 <input onChange={(e)=>{
                                     setPassword(e.target.value);
-                                }} type="password" id="firstname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="passowrd" required />
+                                }} type="password" id="firstname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="at Least 6 digits" required />
                             </div>
                         </div>
                         
